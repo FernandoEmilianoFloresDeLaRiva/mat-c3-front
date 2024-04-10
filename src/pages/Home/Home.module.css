@@ -1,0 +1,22 @@
+.container {
+  background-color: #39386e;
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 70%;
+  padding: 2%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 3px #39386e;
+}
+
+.operations {
+  width: 100%;
+  min-height: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 4%;
+}
