@@ -23,6 +23,8 @@ export const OPERATORS_DATA: string[] = [
   "csc",
   "sec",
   "cot",
+  "√",
   "e",
+  ".",
   "=",
 ];
