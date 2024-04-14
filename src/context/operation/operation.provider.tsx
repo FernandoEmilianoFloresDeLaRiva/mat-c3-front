@@ -8,7 +8,7 @@ interface Props {
 
 export const OperationProvider: React.FC<Props> = ({ children }) => {
   const [operationData, setOperation] = useState<OperationContextEntity>({
-    operation: "",
+    ecuacion: "",
     limiteA: 0,
     limiteB: 0,
   });
@@ -18,19 +18,19 @@ export const OperationProvider: React.FC<Props> = ({ children }) => {
     setOperation((prevOperation: OperationContextEntity) => {
       return {
         ...prevOperation,
-        operation: prevOperation.operation.concat(value),
+        ecuacion: prevOperation.ecuacion.concat(value),
       };
     });
   };
 
   const removeOperation = () => {
-    if (operationData.operation === "") return;
+    if (operationData.ecuacion === "") return;
     setOperation((prevOperation: OperationContextEntity) => {
       return {
         ...prevOperation,
-        operation: prevOperation.operation.substring(
+        ecuacion: prevOperation.ecuacion.substring(
           0,
-          prevOperation.operation.length - 1
+          prevOperation.ecuacion.length - 1
         ),
       };
     });
@@ -41,11 +41,11 @@ export const OperationProvider: React.FC<Props> = ({ children }) => {
     setOperation((prevOperation: OperationContextEntity) => {
       return {
         ...prevOperation,
-        [name]: parseInt(value, 10),
+        [name]: parseInt(value),
       };
     });
   };
-  
+
   return (
     <OperationContext.Provider
       value={{ operationData, addOperation, removeOperation, addLimit }}

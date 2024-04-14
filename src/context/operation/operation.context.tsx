@@ -8,7 +8,7 @@ export const OperationContext = createContext<{
   addLimit: (_e: React.FormEvent<HTMLInputElement>) => void;
 }>({
   operationData: {
-    operation: "",
+    ecuacion: "",
     limiteA: 0,
     limiteB: 0,
   },

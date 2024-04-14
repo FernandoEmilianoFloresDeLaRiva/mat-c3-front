@@ -1,5 +1,5 @@
 export interface OperationContextEntity {
-  operation: string;
+  ecuacion: string;
   limiteA: number;
   limiteB: number;
 }

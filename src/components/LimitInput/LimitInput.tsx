@@ -15,6 +15,7 @@ export const LimitInput: React.FC<Props> = ({
     <div className={styles.container}>
       <label htmlFor={placeholderName}>Ingrese {placeholderName}</label>
       <input
+        required
         type="number"
         placeholder={placeholderName}
         id={placeholderName}
