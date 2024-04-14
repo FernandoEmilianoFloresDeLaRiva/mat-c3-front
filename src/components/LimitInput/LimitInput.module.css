@@ -1,0 +1,31 @@
+.container{
+    background-color: #39386e;
+    box-shadow: 0 0 15px 3px #39386e;
+    border-radius: 10px;
+    width: 25%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container input{
+    background-color: #4a4780;
+    border-radius: 10px;
+    width: 50%;
+    height: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff;
+    border: none;;
+}
+
+.container input::placeholder {
+    text-transform: capitalize;
+    color: #ffffff8b;
+}

@@ -14,6 +14,7 @@ export const OperationButton: React.FC<Props> = ({
       value={valueButton}
       className={styles.button}
       onClick={onClickEvent}
+      type="button"
     >
       {valueButton}
     </button>
