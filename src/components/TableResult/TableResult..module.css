@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 95%;
+  min-height: 50%;
+  gap: 10px;
+}
+
+.container span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container table th,
+td {
+  text-transform: capitalize;
+  border: 3px solid #3f527a;
+  padding: 10px;
+  text-align: center;
+}

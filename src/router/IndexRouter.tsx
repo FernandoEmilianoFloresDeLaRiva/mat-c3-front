@@ -2,7 +2,7 @@ import styles from "./IndexRouter.module.css";
 import { Route } from "wouter";
 import { Home } from "../pages/Home/Home";
 import { OperationProvider } from "../context/operation/operation.provider";
-import { Result } from "../pages/Result/page/Result";
+import { Result } from "../pages/Result/Result";
 
 export const IndexRouter = () => {
   return (

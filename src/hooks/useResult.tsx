@@ -1,10 +1,17 @@
 import { useEffect, useState } from "react";
-import { OperationContextEntity, ResultOperationDTO } from "../entities";
+import { BiseccionAndFalseDTO, OperationContextEntity } from "../entities";
 import { postOperationService } from "../services/services/postOperation.service";
+import { SecanteDTO } from "../entities/Secante.entity";
 
 export const useResult = (reqOperation: OperationContextEntity) => {
-  const [data, setData] = useState<[ResultOperationDTO]>(
-    [] as unknown as [ResultOperationDTO]
+  const [data, setData] = useState<
+    [BiseccionAndFalseDTO[], BiseccionAndFalseDTO[], SecanteDTO[]]
+  >(
+    [] as unknown as [
+      BiseccionAndFalseDTO[],
+      BiseccionAndFalseDTO[],
+      SecanteDTO[]
+    ]
   );
   const [isLoading, setIsLoading] = useState<boolean>(true);
   useEffect(() => {
