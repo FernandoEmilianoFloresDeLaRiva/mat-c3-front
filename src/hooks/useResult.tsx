@@ -2,15 +2,17 @@ import { useEffect, useState } from "react";
 import { BiseccionAndFalseDTO, OperationContextEntity } from "../entities";
 import { postOperationService } from "../services/services/postOperation.service";
 import { SecanteDTO } from "../entities/Secante.entity";
+import { NewtonEntity } from "../entities/Newton.entity";
 
 export const useResult = (reqOperation: OperationContextEntity) => {
   const [data, setData] = useState<
-    [BiseccionAndFalseDTO[], BiseccionAndFalseDTO[], SecanteDTO[]]
+    [BiseccionAndFalseDTO[], BiseccionAndFalseDTO[], SecanteDTO[], NewtonEntity[]]
   >(
     [] as unknown as [
       BiseccionAndFalseDTO[],
       BiseccionAndFalseDTO[],
-      SecanteDTO[]
+      SecanteDTO[],
+      NewtonEntity[]
     ]
   );
   const [isLoading, setIsLoading] = useState<boolean>(true);

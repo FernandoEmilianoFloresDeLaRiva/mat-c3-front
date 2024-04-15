@@ -1,6 +1,6 @@
 export interface NewtonEntity {
   xi: number;
   xiMas: number;
-  raiz: number;
+  raíz: number;
   error: number;
 }

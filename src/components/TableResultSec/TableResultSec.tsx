@@ -29,7 +29,7 @@ export const TableResultSec: React.FC<Props> = ({
               <>
                 <tr key={actualData?.raíz}>
                   <td>{actualData?.raíz}</td>
-                  <td>{actualData?.xiMenos}</td>
+                  {actualData?.xiMenos && <td>{actualData?.xiMenos}</td>}
                   <td>{actualData?.xi}</td>
                   <td>{actualData?.xiMas}</td>
                   <td>{actualData?.error}</td>

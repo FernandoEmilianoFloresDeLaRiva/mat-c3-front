@@ -39,6 +39,11 @@ export const Result = () => {
             data={data[2]}
             theadName={["raiz", "xi - 1", "xi", "xi + 1", "error"]}
           />
+          <TableResultSec
+            methodName="Método de Newton"
+            data={data[3]}
+            theadName={["raiz", "xi", "xi + 1", "error"]}
+          />
         </Suspense>
       ) : (
         "Cargando los resultados de la ecuación!"
